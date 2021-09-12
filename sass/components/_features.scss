@@ -1,0 +1,41 @@
+.features {
+  &__list {
+    display: flex;
+  }
+
+  .features__item + .features__item {
+    margin-left: 30px;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: var(--maine-background-color);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+  }
+
+  &__description {
+    margin-bottom: 10px;
+
+    font-weight: $secondary-weight-bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--maine-title-color);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}

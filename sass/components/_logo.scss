@@ -1,0 +1,15 @@
+.logo {
+  margin-right: 93px;
+  font-family: $secondary-font-family;
+  font-weight: $secondary-weight-bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  &__fisrtpart {
+    color: var(--accent-color);
+  }
+  &__secondpart {
+    color: #000000;
+  }
+}

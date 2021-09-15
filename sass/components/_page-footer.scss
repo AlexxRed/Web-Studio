@@ -2,15 +2,20 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  min-width: $mobile;
   background-color: var(--second-backgroud-color);
 
   &__container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   &__logo {
-    display: block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     margin-bottom: 20px;
   }
 }

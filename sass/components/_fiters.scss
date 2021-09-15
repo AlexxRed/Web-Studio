@@ -1,10 +1,15 @@
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 
   &__item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  &_item:nth-child(5n) {
+    margin-bottom: auto;
   }
 
   &__button {

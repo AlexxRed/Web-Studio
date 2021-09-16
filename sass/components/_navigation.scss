@@ -1,18 +1,19 @@
 .navigation {
   display: flex;
   align-items: center;
+  margin-bottom: auto;
 
   font-weight: $third-font-weight;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
-  &__list {
-    display: flex;
-  }
+  // &__list {
+  //   display: flex;
+  // }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 40px;
   }
 
   &__item {
@@ -21,8 +22,6 @@
 
   &__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--maine-title-color);
 
     transition-property: color;
@@ -40,15 +39,48 @@
     color: var(--accent-color);
   }
 
-  &__link--active:after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    bottom: -1px;
-    right: 0px;
+  @media screen and (min-width: $tablet) {
+    & {
+      display: flex;
+      align-items: center;
+      padding-left: 88px;
 
-    background-color: var(--accent-color);
-    border-radius: 2px;
+      font-weight: $third-font-weight;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      margin-bottom: 0px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+
+      .navigation__item {
+        margin-bottom: 0px;
+      }
+
+      .navigation__item:not(:last-child) {
+        margin-right: 50px;
+      }
+
+      .navigation__link--active:after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        bottom: -1px;
+        right: 0px;
+
+        background-color: var(--accent-color);
+        border-radius: 2px;
+      }
+    }
+    .navigation__link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 }

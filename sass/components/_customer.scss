@@ -1,21 +1,24 @@
 .customer {
   width: 210px;
 
-  & {
-    margin-bottom: 30px;
-  }
+  @media screen and (max-width: 767px) {
+    & {
+      margin: 15px;
+    }
 
-  &:nth-child(5n) {
-    margin-bottom: auto;
-  }
+    width: calc((100% - 4 * 15px) / 2);
 
-  &:nth-child(6n) {
-    margin-bottom: auto;
+    // &:nth-child(5n) {
+    //   margin-bottom: auto;
+    // }
+
+    // &:nth-child(6n) {
+    //   margin-bottom: auto;
+    // }
   }
 
   &__link {
     display: flex;
-    width: 210px;
     height: 92px;
     justify-content: center;
     align-items: center;

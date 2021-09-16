@@ -1,6 +1,6 @@
 .features {
   &__item {
-    width: 450px;
+    // width: 450px;
   }
 
   &__item:not(:last-child) {
@@ -14,7 +14,6 @@
     margin-bottom: 30px;
     background-color: var(--maine-background-color);
     border-radius: 4px;
-    width: 450px;
     height: 120px;
   }
 

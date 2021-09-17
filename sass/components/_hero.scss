@@ -9,11 +9,19 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/background/header-img.jpg");
+    url("../images/background/hero1200.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 100%;
+  max-width: 1600px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__title {
     margin: 0 auto 30px;
@@ -24,6 +32,17 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+
+    @media screen and (min-width: $tablet) {
+      max-width: 360px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 696px;
+
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {

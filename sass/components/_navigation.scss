@@ -52,6 +52,12 @@
       margin-bottom: 0px;
     }
 
+    @media screen and (min-width: $desktop) {
+      & {
+        padding-left: 0px;
+      }
+    }
+
     &__list {
       display: flex;
       justify-content: center;

@@ -6,6 +6,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-right: 93px;
+
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+      }
+
+      .header-navigation {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+      }
+    }
   }
 }
 
@@ -58,7 +85,9 @@
     width: 100vw;
     height: 100vh;
     padding: 0px 40px;
-    background-color: white;
+    background-color: var(--primary-white-color);
+    overflow-y: scroll;
+    z-index: 1;
 
     &.is-open {
       display: block;
@@ -70,6 +99,10 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
   }
 }
 

@@ -10,6 +10,14 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--maine-title-color);
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+
+      font-weight: $secondary-weight-bold;
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
 
   &__list {
@@ -21,5 +29,11 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--maine-title-color);
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin: -15px;
+      }
+    }
   }
 }

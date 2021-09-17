@@ -16,6 +16,15 @@
     //   margin-bottom: auto;
     // }
   }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin: 15px;
+    width: calc((100% - 6 * 15px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 12 * 15px) / 6);
+  }
 
   &__link {
     display: flex;

@@ -22,6 +22,11 @@
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
   }
+
+  @media screen and (min-width: $desktop) {
+    height: 370px;
+    width: calc((100% - 8 * 15px) / 3);
+  }
 }
 
 .projects__link {

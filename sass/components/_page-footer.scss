@@ -15,6 +15,16 @@
       align-items: baseline;
       justify-content: space-evenly;
     }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: nowrap;
+
+      .footer__left {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
   }
 
   &__logo {
@@ -22,6 +32,10 @@
     align-content: center;
     justify-content: center;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0px;
+    }
   }
 }
 

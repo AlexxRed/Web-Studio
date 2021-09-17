@@ -19,4 +19,9 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }

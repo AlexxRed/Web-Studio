@@ -6,15 +6,33 @@
   letter-spacing: 0.03em;
   margin-bottom: 60px;
 
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+  }
+
   &__text {
     margin-bottom: 8px;
 
     color: var(--primary-white-color);
-  }
-  &__item:first-child {
-    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
   }
 
+  &__item:first-child {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__item {
+      display: flex;
+    }
+  }
   &__link {
     display: flex;
     justify-content: center;

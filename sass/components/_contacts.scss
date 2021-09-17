@@ -50,18 +50,18 @@
   .contacts__link {
     display: flex;
     align-items: center;
-    justify-content: center;
 
-    font-weight: $third-font-weight;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--maine-text-color);
+    // font-weight: $third-font-weight;
+    // font-size: 14px;
+    // line-height: 16px;
+    // letter-spacing: 0.02em;
+    // color: var(--maine-text-color);
   }
 }
 
 .contacts__link {
   font-weight: $third-font-weight;
+
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;

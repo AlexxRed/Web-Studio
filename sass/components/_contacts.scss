@@ -140,6 +140,7 @@
 
 .header-socials__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-weight: $third-font-weight;
   font-size: 18px;

@@ -1576,6 +1576,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  max-width: 100%;
   width: 450px;
   height: 609px;
   background-color: var(--primary-white-color);

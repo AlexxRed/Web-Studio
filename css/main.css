@@ -154,11 +154,6 @@ img {
 }
 
 .navigation__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -182,8 +177,8 @@ img {
 .navigation__button:focus .navigation__button--icon {
   position: fixed;
   z-index: 2;
-  top: 31px;
-  right: 22px;
+  top: 30px;
+  right: 21px;
   fill: var(--accent-color);
 }
 
@@ -1983,7 +1978,14 @@ img {
 }
 
 .projects__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -2058,7 +2060,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .projects__content {
-    min-height: 146px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 

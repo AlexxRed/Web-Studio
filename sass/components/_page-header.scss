@@ -37,9 +37,6 @@
 }
 
 .navigation__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -58,8 +55,8 @@
 .navigation__button:focus .navigation__button--icon {
   position: fixed;
   z-index: 2;
-  top: 31px;
-  right: 22px;
+  top: 30px;
+  right: 21px;
   fill: var(--accent-color);
 }
 

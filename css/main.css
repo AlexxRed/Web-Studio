@@ -1977,8 +1977,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .projects__item {
-    height: 370px;
-    width: calc((100% - 8 * 15px) / 3);
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
